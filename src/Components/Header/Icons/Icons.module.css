@@ -1,0 +1,14 @@
+.search{
+    color: white;
+    font-size: 25px;
+}
+.basket{
+    color: white;
+    font-size: 40px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}

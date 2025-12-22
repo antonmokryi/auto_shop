@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Акумулятори",
+    "img": "/images/HeroCatalog/accum.png"
+  },
+  {
+    "id": 2,
+    "name": "Оливи",
+    "img": "/images/HeroCatalog/oil.png"
+  },
+  {
+    "id": 3,
+    "name": "Косметичні засоби",
+    "img": "/images/HeroCatalog/polirol.png"
+  },
+  {
+    "id": 4,
+    "name": "Пристрої",
+    "img": "/images/HeroCatalog/contact.png"
+  },
+  {
+    "id": 5,
+    "name": "Автохімія",
+    "img": "/images/HeroCatalog/clear.png"
+  },
+  {
+    "id": 6,
+    "name": "Запчастини",
+    "img": "/images/HeroCatalog/zap.png"
+  }
+]
