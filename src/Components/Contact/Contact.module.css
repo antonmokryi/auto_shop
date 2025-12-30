@@ -1,0 +1,40 @@
+.contact {
+    width: 600px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: #FF0000 4px solid;
+    border-radius: 10px;
+
+}
+.content{
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 15px;
+}
+.contact_items{
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.contact_items div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+.contact_items div label{
+   color: white;
+}
+.contact_items div input{
+    color: black;
+    width: 50%;
+}
+
+.contact_items textarea{
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+
+}

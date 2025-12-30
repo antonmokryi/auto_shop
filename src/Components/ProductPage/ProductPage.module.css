@@ -1,0 +1,47 @@
+.productPage {
+    background-image: url("/images/Hero/bgHero.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+}
+
+.productPage_content{
+    display: flex;
+    gap: 40px;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.productPage_image{
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+.productPage_image img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px solid red;
+}
+
+.productPage_info{
+    color: white;
+    width: 800px;
+}
+.productPage_info h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.productPage_info p{
+    text-align: start;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 500;
+}
