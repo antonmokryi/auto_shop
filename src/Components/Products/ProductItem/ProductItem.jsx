@@ -3,11 +3,15 @@ import style from './ProductItem.module.css';
 import procent from '../../../data/info.js'
 
 const ProductItem = ({ product }) => {
+    const imgUrl = product.itemLogo.length > 0
+        ? product.itemLogo
+        : "/images/ProductItem/default.jpeg";
+
     return (
         <article className={style.productItem}>
             <div className={style.productItem_img} style={{
                 backgroundImage:
-                `url(${product.itemLogo ? product.itemLogo : "/images/ProductItem/default.jpeg"})`
+                `url(${imgUrl})`
                 }}></div>
             <h3>{product.ua.name}</h3>
             <div  className={style.productItem_container}>
