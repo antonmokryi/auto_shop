@@ -1,0 +1,26 @@
+.filterView {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.filterView__content{
+
+    display: flex;
+    align-items: center;
+border: 4px solid #FF0000;}
+
+.filterView label{
+    color: white;
+}
+.filterView__content button{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}

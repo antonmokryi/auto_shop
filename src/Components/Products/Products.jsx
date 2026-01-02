@@ -4,6 +4,8 @@ import Loader from "../../Components/Loader/Loader.jsx";
 import ProductItem from "./ProductItem/ProductItem.jsx";
 import style from "./Products.module.css";
 import LoadMore from "./LoadMore/LoadMore.jsx";
+import Filter from "./Filter/Filter.jsx";
+import "../../index.css";
 
 const Products = () => {
     const [products, setProducts] = useState([])
@@ -38,7 +40,8 @@ const Products = () => {
 
     return (
         <section className={style.products}>
-            <div className={style.products_list}>
+            <Filter/>
+            <div className={`wrapper ${style.products_list}`}>
                 {loader ? (<Loader />) :(
                     products.slice(0, visileCount).map((product, index) => (
                         <ProductItem product={product} key={index} />

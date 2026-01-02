@@ -1,0 +1,42 @@
+.filter {
+    width: 100%;
+
+}
+
+.filter__content{
+    margin-bottom: 20px;
+    border: #FF0000 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    /*gap: 20px;*/
+}
+.sort{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.filter__content .sort label{
+    display: block;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.filter__select{
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid red ;
+    font-weight: 500;
+}
+
+.filter__select option{
+    border: 1px solid green ;
+    background-color: transparent;
+    color: #FF0000;
+}
