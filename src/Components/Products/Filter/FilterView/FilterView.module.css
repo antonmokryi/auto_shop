@@ -1,0 +1,49 @@
+.filterView {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.filterView__content {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid var(--color-accent-strong);
+    border-radius: var(--radius-sm);
+    padding: 4px;
+}
+
+.filterView label {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.filterView__content button {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 0;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.filterView__content button:hover {
+    background-color: var(--color-accent-strong);
+    color: #000000;
+}
+
+@media (max-width: 640px) {
+    .filterView {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

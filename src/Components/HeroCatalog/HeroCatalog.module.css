@@ -1,0 +1,120 @@
+.HeroCatalog {
+    background-image: url("/images/Hero/catalog.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 900px;
+    background-color: transparent;
+    padding-bottom: 40px;
+}
+
+.HeroCatalog_title {
+    font-size: clamp(24px, 3vw, 36px);
+    padding-top: 70px;
+    margin-top: 0;
+    text-decoration: underline;
+    text-decoration-color: #c53720;
+    text-underline-offset: 12px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.HeroCatalog_subtitle {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: clamp(18px, 2vw, 24px);
+    letter-spacing: 1px;
+}
+
+.HeroCatalog_category {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.HeroCatalog_card {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.HeroCatalog_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.HeroCatalog_card__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    gap: 12px;
+}
+
+.HeroCatalog_card__overlay h3 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.HeroCatalog_card__overlay button {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 2px solid rgba(197, 55, 32, 1);
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.HeroCatalog_card__overlay button:hover {
+    background-color: rgba(197, 55, 32, 1);
+}
+
+.HeroCatalog_card:hover .HeroCatalog_card__overlay {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .HeroCatalog {
+        min-height: auto;
+    }
+
+    .HeroCatalog_category {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+
+    .HeroCatalog_card {
+        height: 320px;
+    }
+}
+
+@media (max-width: 640px) {
+    .HeroCatalog_category {
+        grid-template-columns: 1fr;
+    }
+
+    .HeroCatalog_card__overlay {
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+    }
+
+    .HeroCatalog_card {
+        height: 280px;
+    }
+}

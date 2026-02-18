@@ -1,0 +1,16 @@
+.img {
+    width: min(350px, 100%);
+    height: auto;
+    aspect-ratio: 7 / 6;
+    background-size: cover;
+    background-position: center;
+    margin: 40px 0;
+    border-radius: var(--radius-md);
+}
+
+@media (max-width: 640px) {
+    .img {
+        width: 100%;
+        margin: 24px 0;
+    }
+}

@@ -1,0 +1,57 @@
+.Hero {
+    width: 100%;
+    background-image: url("/images/Hero/bgHero.png");
+    background-size: cover;
+    background-position: center;
+    min-height: clamp(420px, 60vh, 620px);
+}
+
+.Hero_wellcome {
+    padding-top: clamp(120px, 18vh, 150px);
+    padding-bottom: clamp(120px, 30vh, 293px);
+}
+
+.Hero_title {
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: clamp(20px, 2.2vw, 28px);
+    max-width: 720px;
+}
+
+.Hero_btn {
+    min-width: 216px;
+    color: #ffffff;
+    margin-top: 40px;
+    background-color: transparent;
+    border: 2px solid var(--color-accent-strong);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 14px 20px;
+    border-radius: var(--radius-sm);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.Hero_btn:hover {
+    background-color: #ffffff;
+    color: #111111;
+    border-color: #ffffff;
+}
+
+@media (max-width: 640px) {
+    .Hero_wellcome {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .Hero_title {
+        margin: 0 auto;
+    }
+
+    .Hero_btn {
+        margin-top: 24px;
+        width: 100%;
+        max-width: 320px;
+    }
+}

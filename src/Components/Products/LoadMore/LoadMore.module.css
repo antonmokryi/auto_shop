@@ -1,0 +1,31 @@
+.loadMore {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.loadMore_btn {
+    padding: 10px 20px;
+    border: 2px solid var(--color-accent-strong);
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: var(--radius-sm);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.loadMore_btn:hover {
+    background-color: #ffffff;
+    color: #111111;
+    border-color: #ffffff;
+}
+
+@media (max-width: 640px) {
+    .loadMore_btn {
+        margin: 12px 0;
+        width: 100%;
+        max-width: 320px;
+    }
+}

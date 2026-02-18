@@ -1,0 +1,15 @@
+.btn {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    border-radius: var(--radius-sm);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+    border-color: var(--color-accent-strong);
+    color: var(--color-accent-strong);
+}

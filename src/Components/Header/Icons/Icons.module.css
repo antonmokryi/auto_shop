@@ -1,0 +1,78 @@
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 8px;
+}
+
+.search {
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.search:hover {
+    color: var(--color-accent);
+}
+
+.basket {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.basket__icon {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.basket span {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background-color: var(--color-accent-strong);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+}
+
+@media (max-width: 640px) {
+    .icons {
+        gap: 10px;
+        padding: 0 4px;
+    }
+
+    .search {
+        font-size: 20px;
+    }
+
+    .basket {
+        width: 36px;
+        height: 36px;
+    }
+
+    .basket__icon {
+        font-size: 26px;
+    }
+
+    .basket span {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+    }
+}

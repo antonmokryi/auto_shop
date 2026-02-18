@@ -1,0 +1,85 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-color: #000000;
+    color: #ffffff;
+    width: min(520px, 100%);
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    padding: 20px;
+}
+
+.label {
+    display: block;
+    margin: 10px 0 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.input,
+.select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid var(--color-accent-strong);
+    border-radius: var(--radius-sm);
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.input::placeholder {
+    color: #888888;
+}
+
+.select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.btn {
+    margin: 12px 0 0;
+    background-color: #000000;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    border: 2px solid var(--color-accent-strong);
+    cursor: pointer;
+    width: 100%;
+}
+
+.error {
+    color: var(--color-accent-strong);
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        align-items: flex-start;
+    }
+
+    .itemList {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 640px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .container,
+    .itemList {
+        width: 100%;
+        max-width: 100%;
+    }
+}

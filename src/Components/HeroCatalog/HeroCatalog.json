@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Акумулятори",
+    "img": "/images/HeroCatalog/accum.png",
+    "url": "Акумулятори"
+  },
+  {
+    "id": 2,
+    "name": "Оливи",
+    "img": "/images/HeroCatalog/oil.png",
+    "url": "Моторні оливи для легкових авто"
+  },
+  {
+    "id": 3,
+    "name": "Косметичні засоби",
+    "img": "/images/HeroCatalog/polirol.png",
+    "url": "Ароматизатори, пахучка в машину"
+  },
+  {
+    "id": 4,
+    "name": "Пристрої",
+    "img": "/images/HeroCatalog/contact.png",
+    "url": "Авто аксесуари"
+  },
+  {
+    "id": 5,
+    "name": "Автохімія",
+    "img": "/images/HeroCatalog/clear.png",
+    "url": "Автокосметика"
+  },
+  {
+    "id": 6,
+    "name": "Запчастини",
+    "img": "/images/HeroCatalog/zap.png",
+    "url": "Лампи для авто, освітлення автомобіля"
+  }
+]

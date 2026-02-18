@@ -1,0 +1,37 @@
+.header {
+    width: 100%;
+    min-height: 88px;
+    background: #000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+.header_block {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        min-height: 72px;
+    }
+
+    .header_block {
+        height: 72px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        min-height: 64px;
+    }
+
+    .header_block {
+        height: 64px;
+    }
+}

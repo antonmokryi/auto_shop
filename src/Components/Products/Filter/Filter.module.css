@@ -1,0 +1,60 @@
+.filter {
+    width: 100%;
+    display: grid;
+    gap: 12px;
+}
+
+.filter__content {
+    margin-bottom: 20px;
+    border: 1px solid var(--color-accent-strong);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    background-color: #0d0d0d;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.sort {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    align-items: center;
+    gap: 12px;
+}
+
+.filter__content .sort label {
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.filter__select {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 6px 10px;
+    border: 1px solid var(--color-accent-strong);
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+}
+
+.filter__select option {
+    background-color: #000000;
+    color: var(--color-accent-strong);
+}
+
+@media (max-width: 640px) {
+    .filter__content {
+        margin-bottom: 10px;
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .sort {
+        grid-auto-flow: row;
+        justify-items: start;
+    }
+}
